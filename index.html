@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,14 +9,15 @@
   </head>
   <body>
     <div class="flex flex-row">
-      <div class="bg-[#aad1da] h-screen w-[35vw]">
+      <div
+        class="container-left bg-[#ffffff] h-screen w-[35vw] flex flex-col items-center">
+       <div class="search-container">
+         <input type="text" id="search-loco" name="location" class="border-2 border-solid border-black rounded-[0.5rem] m-5 p-5px w-70 h-10" >
+        <button type="button" onclick="getCityInfo()" class="border-2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 ... w-30 rounded-[0.5rem]  ">Search</button>
 
-        <div class="search-loco">
-          <input type="search" name="location" placeholder="location">
-        </div>
-
+       </div>
         <div class="weather-logo">
-          <img src="" alt="">
+          <img src="" alt="" />
         </div>
 
         <div class="weather-info">
@@ -24,9 +25,7 @@
           <p>Mostly cloudy</p>
         </div>
 
-        <div class="line">
-          underline
-        </div>
+        <div class="line">underline</div>
 
         <div class="discription">
           <p>21-July-2024</p>
@@ -37,21 +36,31 @@
         <div class="location">
           <p>daka</p>
         </div>
-
       </div>
 
-      <div class="bg-[#c78484] h-screen w-[65vw]">
-
-        <div class="right-main">
+      <div class="container-right bg-[#b4adad] h-screen w-[65vw]">
+        <div class="container-right-inner">
           <div class="first-row">
             <div>1</div>
             <div>2</div>
             <div>3</div>
           </div>
-        </div>
 
+          <div class="second-row">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </div>
+
+          <div class="third-row">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </div>
+        </div>
       </div>
     </div>
     <script type="module" src="/src/main.js"></script>
+    <script src="/src/weatherlogic.js"></script>
   </body>
 </html>
